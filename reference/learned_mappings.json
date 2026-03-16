@@ -1,0 +1,66 @@
+[
+  {
+    "carrier": "A J Gallagher Risk Management",
+    "carrier_code": "AJGAL10-01",
+    "carrier_policy_ref": "GL3506777",
+    "epic_policy_id": "EC91CF55-1802-49A5-9AE2-AF6E9C2B4734",
+    "client_name": "Lewis Contracting Services, LLC",
+    "epic_carrier": "National Union Fire Insurance"
+  },
+  {
+    "carrier": "QEO Insurance Group",
+    "carrier_code": "QEOINSU-01",
+    "carrier_policy_ref": "AQ1YGA000201-02",
+    "epic_policy_id": "93b81ae1-d05b-434a-ba31-5bb032215d3d",
+    "client_name": "Advantage Fire Sprinkler Company Inc",
+    "epic_carrier": "Clear Blue Insurance Company"
+  },
+  {
+    "carrier": "A J Gallagher Risk Management",
+    "carrier_code": "AJGAL10-01",
+    "carrier_policy_ref": "MWC31535024",
+    "epic_policy_id": "92a55451-1d63-4c8d-b1b4-a38eab772d69",
+    "client_name": "CourierNet, Inc.",
+    "epic_carrier": "Old Republic Insurance Company"
+  },
+  {
+    "carrier": "R-T Specialty, LLC",
+    "carrier_code": "R-TSP10-01",
+    "carrier_policy_ref": "P0000003762",
+    "epic_policy_id": "25b1beb8-fcad-4187-b91e-a69228271e6d",
+    "client_name": "Fifeco Properties, LLC",
+    "epic_carrier": "James River Insurance Company"
+  },
+  {
+    "carrier": "Central Insurance Companies",
+    "carrier_code": "CENIN1",
+    "carrier_policy_ref": "CLP8698287",
+    "epic_policy_id": "B6AA85B1-E990-44CC-AF5F-FB963D219482",
+    "client_name": "Maileg North America Inc",
+    "epic_carrier": "Central Mutual Insurance Company"
+  },
+  {
+    "carrier": "Brown & Riding Insurance Services, Inc.",
+    "carrier_code": "BROW&RI-01",
+    "carrier_policy_ref": "CP1870413",
+    "epic_policy_id": "2160b025-ef09-4e5c-972b-8682be4adfee",
+    "client_name": "Georgia Appreciation Property, Inc.",
+    "epic_carrier": "United States Liability Ins Co"
+  },
+  {
+    "carrier": "Starr Indemnity &  Liability Company",
+    "carrier_code": "STAIN2",
+    "carrier_policy_ref": "1000081840",
+    "epic_policy_id": "918D911D-5B6E-4C8F-A419-F832D6DE3C97",
+    "client_name": "SRM Group, LLC",
+    "epic_carrier": "Starr Indemnity &  Liability Company"
+  },
+  {
+    "carrier": "A J Gallagher Risk Management",
+    "carrier_code": "AJGAL10-01",
+    "carrier_policy_ref": "WC013588059",
+    "epic_policy_id": "6dcef22e-2961-4cc2-93c2-558cb3922a92",
+    "client_name": "Pipeline Controls & Services, Inc.",
+    "epic_carrier": "New Hampshire Insurance Co"
+  }
+]

@@ -1,0 +1,162 @@
+openapi: 3.1.0
+info:
+  title: 5G Vector Carrier Accounting API
+  description: |
+    Insurance carrier statement processing for Applied Epic agencies.
+    Parse PDFs/Excel, normalize with AI, reconcile against policy data.
+  version: 0.1.0
+servers:
+  - url: https://5gvector.com
+    description: Production
+
+paths:
+  /api/carrier-accounting/carriers:
+    get:
+      operationId: listCarriers
+      summary: List all supported insurance carriers
+      description: Returns all 48+ carriers with their field mappings
+      responses:
+        "200":
+          description: List of carriers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  carriers:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        carrier_slug:
+                          type: string
+                        display_name:
+                          type: string
+                        policy_number_field:
+                          type: string
+                        premium_field:
+                          type: string
+                  total:
+                    type: integer
+
+  /api/carrier-accounting/metrics:
+    get:
+      operationId: getDailyMetrics
+      summary: Get daily accuracy scorecard
+      description: Returns total transactions, auto-approved, review queue, posted, confidence
+      parameters:
+        - name: target_date
+          in: query
+          schema:
+            type: string
+          description: "Date in YYYY-MM-DD format (defaults to today)"
+      responses:
+        "200":
+          description: Daily metrics
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  total_transactions:
+                    type: integer
+                  auto_approved:
+                    type: integer
+                  review_queue:
+                    type: integer
+                  posted_to_epic:
+                    type: integer
+                  avg_confidence:
+                    type: number
+                  total_amount:
+                    type: number
+                  is_synthetic:
+                    type: boolean
+
+  /api/carrier-accounting/queue:
+    get:
+      operationId: getExceptionQueue
+      summary: Get transactions needing human review
+      description: Returns transactions with confidence 80-94% that need review
+      responses:
+        "200":
+          description: List of transactions needing review
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                    carrier:
+                      type: string
+                    policy_number:
+                      type: string
+                    client_name:
+                      type: string
+                    amount:
+                      type: number
+                    confidence_score:
+                      type: number
+                    status:
+                      type: string
+
+  /api/carrier-accounting/runs:
+    get:
+      operationId: getRunHistory
+      summary: Get recent ingestion runs
+      parameters:
+        - name: days
+          in: query
+          schema:
+            type: integer
+            default: 7
+      responses:
+        "200":
+          description: List of runs
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+
+  /api/carrier-accounting/reconciliation:
+    get:
+      operationId: getReconciliation
+      summary: Compare posted transactions against Epic
+      parameters:
+        - name: run_id
+          in: query
+          schema:
+            type: string
+        - name: carrier
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Reconciliation report
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /api/carrier-accounting/trial-diff:
+    get:
+      operationId: getTrialDiff
+      summary: Shadow mode comparison — what would have posted vs Epic
+      parameters:
+        - name: run_id
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Trial diff report
+          content:
+            application/json:
+              schema:
+                type: object

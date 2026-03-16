@@ -3,7 +3,18 @@
     "allow": [
       "Bash(cd:*)",
       "Bash(ls:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(npx supabase:*)",
+      "Bash(pip install:*)",
+      "Bash(grep:*)",
+      "Bash(wc:*)",
+      "WebFetch(domain:comulate.com)",
+      "WebFetch(domain:www.comulate.com)",
+      "Bash(gcloud auth:*)",
+      "Bash(where gcloud:*)",
+      "Bash(gcloud projects:*)",
+      "Bash(cp:*)",
+      "WebSearch"
     ]
   }
 }

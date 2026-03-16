@@ -1,5 +1,15 @@
 # Carrier Accounting MCP — Claude Code Context
 
+## CRITICAL DATA PROTECTION RULES
+
+**NEVER delete, truncate, drop, or overwrite customer data.** This includes:
+- Supabase: `synced_policies` (316K+), `synced_clients` (15K+), `carrier_transactions`, `carrier_runs`, `carrier_learned_mappings`, `organizations`, `users`, `subscriptions`
+- BigQuery: Any tables in the `data-lake-412218` project
+- No DELETE, TRUNCATE, DROP TABLE, or `.delete()` bulk operations
+- Use soft deletes only. When in doubt, **ASK first**.
+
+---
+
 ## Project Overview
 
 This is an **Insurance Carrier Accounting MCP Server** for Snellings Walters Insurance.
