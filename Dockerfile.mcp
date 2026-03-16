@@ -1,0 +1,20 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc libpq-dev && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt uvicorn
+
+COPY mcp_server/ mcp_server/
+COPY data_lake/ data_lake/
+COPY carrier_configs/ carrier_configs/
+
+RUN mkdir -p uploads exports
+
+EXPOSE 8000
+
+# Use the HTTP server for cloud deployment
+CMD ["uvicorn", "mcp_server.server_http:app", "--host", "0.0.0.0", "--port", "8000"]

@@ -619,21 +619,27 @@ def trial_diff_report(
 
 def main():
     """Entry point for the carrier-accounting-mcp CLI command."""
+    import os
     import argparse
     parser = argparse.ArgumentParser(description="Carrier Accounting MCP Server")
     parser.add_argument("--mode", default=Config.DEFAULT_MODE,
                         choices=["trial", "live"], help="Default operating mode")
-    parser.add_argument("--port", type=int, default=8000)
+    parser.add_argument("--port", type=int, default=int(os.getenv("PORT", "8000")))
+    parser.add_argument("--transport", default=os.getenv("TRANSPORT", "stdio"),
+                        choices=["stdio", "http"], help="Transport: stdio (local) or http (cloud)")
     args = parser.parse_args()
 
     print(f"Starting Carrier Accounting MCP Server")
-    print(f"  Default mode: {args.mode}")
-    print(f"  Tools registered: 21")
-    print(f"  Carriers supported: 48+")
+    print(f"  Transport: {args.transport}")
+    print(f"  Port: {args.port}")
+    print(f"  Tools: 21 | Carriers: 48+")
     print(f"  Docs: https://5gvector.com/carrier-accounting")
     print()
 
-    mcp.run(port=args.port)
+    if args.transport == "http":
+        mcp.run(transport="http", host="0.0.0.0", port=args.port)
+    else:
+        mcp.run(transport="stdio")
 
 
 if __name__ == "__main__":
