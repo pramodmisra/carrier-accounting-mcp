@@ -52,7 +52,15 @@ scorer = ConfidenceScorer()
 # INGESTION TOOLS                                                      #
 # ================================================================== #
 
-@mcp.tool()
+@mcp.tool(
+    title="Ingest Carrier Statement",
+    annotations={
+        "readOnlyHint": False,
+        "destructiveHint": False,
+        "idempotentHint": False,
+        "openWorldHint": True,
+    },
+)
 def ingest_carrier_statement(
     file_path: str,
     carrier: str,
@@ -117,7 +125,15 @@ def ingest_carrier_statement(
     }
 
 
-@mcp.tool()
+@mcp.tool(
+    title="Ingest PDF Statement",
+    annotations={
+        "readOnlyHint": False,
+        "destructiveHint": False,
+        "idempotentHint": False,
+        "openWorldHint": True,
+    },
+)
 def ingest_pdf(file_path: str, carrier: str, mode: str = "trial") -> dict:
     """
     Ingest a single carrier PDF statement. Runs the full pipeline.
@@ -126,7 +142,15 @@ def ingest_pdf(file_path: str, carrier: str, mode: str = "trial") -> dict:
     return ingest_carrier_statement(file_path, carrier, mode)
 
 
-@mcp.tool()
+@mcp.tool(
+    title="Ingest Excel Bordereaux",
+    annotations={
+        "readOnlyHint": False,
+        "destructiveHint": False,
+        "idempotentHint": False,
+        "openWorldHint": True,
+    },
+)
 def ingest_excel(file_path: str, carrier: str, mode: str = "trial",
                  sheet_name: Optional[str] = None) -> dict:
     """
@@ -139,7 +163,15 @@ def ingest_excel(file_path: str, carrier: str, mode: str = "trial",
 # STANDALONE PIPELINE TOOLS (Gap #2)                                   #
 # ================================================================== #
 
-@mcp.tool()
+@mcp.tool(
+    title="Normalize Transactions",
+    annotations={
+        "readOnlyHint": True,
+        "destructiveHint": False,
+        "idempotentHint": True,
+        "openWorldHint": True,
+    },
+)
 def normalize_transactions(
     file_path: str,
     carrier: str,
@@ -161,7 +193,15 @@ def normalize_transactions(
     return [t.to_dict() for t in transactions]
 
 
-@mcp.tool()
+@mcp.tool(
+    title="Validate Against Data Lake",
+    annotations={
+        "readOnlyHint": True,
+        "destructiveHint": False,
+        "idempotentHint": True,
+        "openWorldHint": True,
+    },
+)
 def validate_against_datalake(
     file_path: str,
     carrier: str,
@@ -200,7 +240,15 @@ def validate_against_datalake(
     }
 
 
-@mcp.tool()
+@mcp.tool(
+    title="Score Transaction Confidence",
+    annotations={
+        "readOnlyHint": True,
+        "destructiveHint": False,
+        "idempotentHint": True,
+        "openWorldHint": False,
+    },
+)
 def score_confidence(
     carrier: str,
     policy_number: str,
@@ -267,7 +315,15 @@ def score_confidence(
 # BROWSER TOOLS (Gap #1)                                               #
 # ================================================================== #
 
-@mcp.tool()
+@mcp.tool(
+    title="Browse Carrier Portal",
+    annotations={
+        "readOnlyHint": False,
+        "destructiveHint": False,
+        "idempotentHint": False,
+        "openWorldHint": True,
+    },
+)
 def browse_carrier_portal(
     carrier: str,
     username: str,
@@ -295,7 +351,15 @@ def browse_carrier_portal(
 # REVIEW TOOLS                                                         #
 # ================================================================== #
 
-@mcp.tool()
+@mcp.tool(
+    title="Get Exception Queue",
+    annotations={
+        "readOnlyHint": True,
+        "destructiveHint": False,
+        "idempotentHint": True,
+        "openWorldHint": False,
+    },
+)
 def get_exception_queue_today() -> list[dict]:
     """
     Return all transactions in the human review queue for today.
@@ -305,7 +369,15 @@ def get_exception_queue_today() -> list[dict]:
     return get_exception_queue(date.today())
 
 
-@mcp.tool()
+@mcp.tool(
+    title="Approve Transaction",
+    annotations={
+        "readOnlyHint": False,
+        "destructiveHint": False,
+        "idempotentHint": False,
+        "openWorldHint": False,
+    },
+)
 def approve(transaction_id: str, reviewer: str, notes: Optional[str] = None) -> dict:
     """
     Approve a single transaction from the review queue.
@@ -319,7 +391,15 @@ def approve(transaction_id: str, reviewer: str, notes: Optional[str] = None) -> 
     return approve_transaction(transaction_id, reviewer, notes)
 
 
-@mcp.tool()
+@mcp.tool(
+    title="Reject Transaction",
+    annotations={
+        "readOnlyHint": False,
+        "destructiveHint": False,
+        "idempotentHint": False,
+        "openWorldHint": False,
+    },
+)
 def reject(transaction_id: str, reviewer: str, reason: str) -> dict:
     """
     Reject a transaction from the review queue.
@@ -332,7 +412,15 @@ def reject(transaction_id: str, reviewer: str, reason: str) -> dict:
     return reject_transaction(transaction_id, reviewer, reason)
 
 
-@mcp.tool()
+@mcp.tool(
+    title="Bulk Approve Run",
+    annotations={
+        "readOnlyHint": False,
+        "destructiveHint": True,
+        "idempotentHint": False,
+        "openWorldHint": False,
+    },
+)
 def approve_run(run_id: str, reviewer: str) -> dict:
     """
     Bulk approve all review-queue transactions from a specific run.
@@ -349,7 +437,15 @@ def approve_run(run_id: str, reviewer: str) -> dict:
 # POSTING TOOLS                                                        #
 # ================================================================== #
 
-@mcp.tool()
+@mcp.tool(
+    title="Post to Applied Epic",
+    annotations={
+        "readOnlyHint": False,
+        "destructiveHint": True,
+        "idempotentHint": False,
+        "openWorldHint": True,
+    },
+)
 def post_to_epic(run_id: str) -> dict:
     """
     Post all approved transactions from a run to Applied Epic via REST API.
@@ -388,7 +484,15 @@ def post_to_epic(run_id: str) -> dict:
     return post_transactions_to_epic(transactions, mode="live")
 
 
-@mcp.tool()
+@mcp.tool(
+    title="Post to Epic via Browser",
+    annotations={
+        "readOnlyHint": False,
+        "destructiveHint": True,
+        "idempotentHint": False,
+        "openWorldHint": True,
+    },
+)
 def post_to_epic_via_browser(
     run_id: str,
     epic_username: str,
@@ -436,7 +540,15 @@ def post_to_epic_via_browser(
     ))
 
 
-@mcp.tool()
+@mcp.tool(
+    title="Generate Epic CSV Import",
+    annotations={
+        "readOnlyHint": True,
+        "destructiveHint": False,
+        "idempotentHint": True,
+        "openWorldHint": False,
+    },
+)
 def generate_epic_import(run_id: str, output_path: Optional[str] = None) -> dict:
     """
     Generate an Applied Epic-compatible CSV import file for a run's
@@ -492,7 +604,15 @@ def generate_epic_import(run_id: str, output_path: Optional[str] = None) -> dict
     return result
 
 
-@mcp.tool()
+@mcp.tool(
+    title="Rollback Epic Entries",
+    annotations={
+        "readOnlyHint": False,
+        "destructiveHint": True,
+        "idempotentHint": False,
+        "openWorldHint": True,
+    },
+)
 def rollback(run_id: str, reason: str) -> dict:
     """
     Rollback all Epic entries from a run.
@@ -509,7 +629,15 @@ def rollback(run_id: str, reason: str) -> dict:
 # MONITORING TOOLS (Gap #6)                                            #
 # ================================================================== #
 
-@mcp.tool()
+@mcp.tool(
+    title="Daily Accuracy Metrics",
+    annotations={
+        "readOnlyHint": True,
+        "destructiveHint": False,
+        "idempotentHint": True,
+        "openWorldHint": False,
+    },
+)
 def daily_metrics(target_date: Optional[str] = None) -> dict:
     """
     Get the daily accuracy scorecard for the accounting team.
@@ -525,7 +653,15 @@ def daily_metrics(target_date: Optional[str] = None) -> dict:
     return bq.get_daily_metrics(parsed_date)
 
 
-@mcp.tool()
+@mcp.tool(
+    title="Carrier Accuracy Report",
+    annotations={
+        "readOnlyHint": True,
+        "destructiveHint": False,
+        "idempotentHint": True,
+        "openWorldHint": False,
+    },
+)
 def carrier_accuracy(carrier: str, days: int = 30) -> dict:
     """
     Get accuracy metrics for a specific carrier over the past N days.
@@ -538,7 +674,15 @@ def carrier_accuracy(carrier: str, days: int = 30) -> dict:
     return bq.get_carrier_accuracy(carrier, days)
 
 
-@mcp.tool()
+@mcp.tool(
+    title="Run History",
+    annotations={
+        "readOnlyHint": True,
+        "destructiveHint": False,
+        "idempotentHint": True,
+        "openWorldHint": False,
+    },
+)
 def run_history(days: int = 7) -> list[dict]:
     """
     Get recent ingestion run history. Shows run_id, carrier, mode, counts,
@@ -550,7 +694,15 @@ def run_history(days: int = 7) -> list[dict]:
     return _get_run_history(days)
 
 
-@mcp.tool()
+@mcp.tool(
+    title="List Supported Carriers",
+    annotations={
+        "readOnlyHint": True,
+        "destructiveHint": False,
+        "idempotentHint": True,
+        "openWorldHint": False,
+    },
+)
 def list_supported_carriers() -> list[str]:
     """List all carriers currently configured in the system."""
     from mcp_server.schemas.carrier_schemas import CARRIER_REGISTRY
@@ -561,7 +713,15 @@ def list_supported_carriers() -> list[str]:
 # REPORTING TOOLS (Gaps #4 and #5)                                     #
 # ================================================================== #
 
-@mcp.tool()
+@mcp.tool(
+    title="Reconciliation Report",
+    annotations={
+        "readOnlyHint": True,
+        "destructiveHint": False,
+        "idempotentHint": True,
+        "openWorldHint": True,
+    },
+)
 def reconciliation_report(
     run_id: Optional[str] = None,
     carrier: Optional[str] = None,
@@ -586,7 +746,15 @@ def reconciliation_report(
     return _reconciliation_report(run_id, carrier, parsed_date)
 
 
-@mcp.tool()
+@mcp.tool(
+    title="Trial Diff Report",
+    annotations={
+        "readOnlyHint": True,
+        "destructiveHint": False,
+        "idempotentHint": True,
+        "openWorldHint": True,
+    },
+)
 def trial_diff_report(
     run_id: Optional[str] = None,
     carrier: Optional[str] = None,
