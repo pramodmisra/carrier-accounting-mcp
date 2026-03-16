@@ -1,0 +1,1289 @@
+
+ 
+
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+		  xmlns:o="urn:schemas-microsoft-com:office:office"
+		  xmlns:x="urn:schemas-microsoft-com:office:excel"
+		  xmlns="http://www.w3.org/TR/REC-html40">
+
+	<head>
+	<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+	<meta name=ProgId content=Excel.Sheet>
+	<meta name=Generator content="Excelreport">
+
+    <title>Statement Detail</title>
+<style>      
+@page
+   {margin:.5in .25in .5in .25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-page-orientation:landscape;}
+
+.Normal
+	{mso-style-parent:style0;
+	font-size:8.0pt;
+	font-weight:500;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+    mso-number-format:Fixed;
+	text-align:right;
+	border:none;
+	white-space:normal;}
+
+.NormalYellow
+	{mso-style-parent:style0;
+	font-size:8.0pt;
+	font-weight:500;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:right;
+	border:none;
+	background:#FFFF99;
+	white-space:normal;}
+
+.NoColorWithBorder
+	{mso-style-parent:style0;
+	font-size:8.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:right;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+
+.NoColorWithBorder1
+	{mso-style-parent:style0;
+	font-size:8.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\@";
+	text-align:right;
+	border:.5pt solid windowtext;
+	white-space:normal;}	
+
+.NoColorWithBorderNormal
+	{mso-style-parent:style0;
+	font-size:8.0pt;
+	font-weight:500;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:right;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+
+.ShadedWithBorder
+	{mso-style-parent:style0;
+	font-size:8.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:right;
+	border:.5pt solid windowtext;
+	background:silver;
+	mso-pattern:auto none;
+	white-space:normal;}
+
+.ShadedWithNoBorder1
+	{mso-style-parent:style0;
+	font-size:8.0pt;
+	font-weight:500;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+    mso-number-format:"\@";
+	text-align:right;
+	vertical-align:right;
+	background:silver;
+	mso-pattern:auto none;}
+	
+.ShadedWithNoBorder2
+	{mso-style-parent:style0;
+	font-size:8.0pt;
+	font-weight:500;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+    mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	background:silver;
+	mso-pattern:auto none;}
+</style>
+</head>
+  
+<body>
+
+<table>
+<tr><td style="font-family:arial; font-size:14pt;text-align:center">
+
+		<i><b>DETAIL STATEMENT</b></i>
+
+
+<table class="commissionTableContainer" id="t1" border="0" width="100%">
+<tr><td style="ShadedWithBorder"><b>LNL</b></tr>
+<tr><td width="100%">
+
+  <table id="t2" cellspacing="0"  style="border: 1px solid #dedee0;" >    
+  	<tr ><td class="ShadedWithBorder" style= "padding:10px;text-align:left" colspan="3">Agent number: 000035622</td></tr>
+    <tr><td>
+      <table border="0" cellspacing="0"  width="100%">
+        <tr ><td class="NoColorWithBorderNormal" style= "padding: 10px">JOHN SNELLINGS INS AGCY INC</td></tr>
+        
+        <tr ><td class="NoColorWithBorderNormal" style= "padding: 10px">PO BOX 661061</td></tr>
+        <tr ><td class="NoColorWithBorderNormal" style= "padding: 10px" >DALLAS&nbsp; 
+                                     TX&nbsp;
+                                     75266</td></tr>
+      </table>
+    </td>
+	</tr>
+  </table>
+  
+  
+
+
+<table id="t4" border="0" width="100%">
+<tr><td width="49%">
+  
+  <table class="grayTableBackground" id="t5"  width="100%" >
+  <tr><td  >
+    <table id="t6" border="0" width="100%">
+    <tr>
+      <td style= "padding: 10px;" width="40%" align="left" class="ShadedWithBorder">Cycle date</td>
+      <td style= "padding: 10px;" width="60%" align="left" class="NoColorWithBorder1">03/28/2025</td>
+         
+    </tr>
+ 
+    <tr>
+      <td style= "padding: 10px" width="40%" align="left" class="ShadedWithBorder">Commissions</td>
+      <td style= "padding: 10px" width="60%" align="left" class="NoColorWithBorder"> 5,473.79</td>   
+    </tr>
+ 
+      
+    
+    <tr>
+      <td style= "padding: 10px" width="40%" align="left" class="ShadedWithBorder">Current period total</td>
+      <td style= "padding: 10px" width="60%" align="left" class="NoColorWithBorder"> 5,473.79</td>   
+    </tr>
+    
+    
+    
+    <tr>
+      <td style= "padding: 10px" width="40%" colspan="1" align="left" class="ShadedWithBorder">Total payable</td>
+      <td style= "padding: 10px" width="60%" align="left" class="NoColorWithBorder"> 5,473.79</td>   
+    </tr>
+    </table>
+
+  </td></tr>
+  </table>
+
+  </td>
+
+  <td width="2%">
+  <table id="t7" border="0" width="100%"><tr><td >&nbsp</td></tr>
+  </table></td>
+
+
+<td valign="top" width="49%"> 
+
+  <table class="grayTableBackground" id="t8" width="100%">
+  <tr><td>
+    <table id="t9" border="0" width="100%">
+    <tr>
+      <td align="left" class="">&nbsp</td>
+      <td style= "padding: 10px" align="center" colspan="2" class="ShadedWithBorder">Current period</td>
+      <td style= "padding: 10px" align="center" colspan="2" class="ShadedWithBorder">Year to date</td>
+    </tr>
+    <tr>
+      <td align="left"class="">&nbsp</td>
+      <td style= "padding: 10px" align="left" class="ShadedWithBorder">Life</td>
+      <td style= "padding: 10px" align="left" class="ShadedWithBorder">Health</td>
+      <td style= "padding: 10px"  align="left" class="ShadedWithBorder">Life</td>
+      <td style= "padding: 10px" align="left" class="ShadedWithBorder">Health</td>
+    </tr>
+    <tr>       
+      <td style= "padding: 10px" align="left" class="ShadedWithBorder">First year</td>
+      <td style= "padding: 10px" align="left" class="NoColorWithBorder">98.62</td>
+      <td style= "padding: 10px" align="left" class="NoColorWithBorder">536.06</td>
+      <td style= "padding: 10px" align="left" class="NoColorWithBorder">327.07</td>
+      <td style= "padding: 10px" align="left" class="NoColorWithBorder"> 2,547.40</td>
+    </tr>
+    <tr>
+      <td style= "padding: 10px" align="left" class="ShadedWithBorder">Renewal</td>
+      <td style= "padding: 10px" align="left" class="NoColorWithBorder"> 1,461.59</td>
+      <td style= "padding: 10px" align="left" class="NoColorWithBorder"> 3,377.52</td>
+      <td style= "padding: 10px" align="left" class="NoColorWithBorder"> 4,923.68</td>
+      <td style= "padding: 10px" align="left" class="NoColorWithBorder"> 12,752.32</td>
+    </tr>
+    </table>
+  </td></tr>
+  </table>
+
+</td></tr>
+</table>
+
+
+
+
+<br>
+
+
+
+<table class="grayTableBackground indentCellsTenPx" id="t14" cellspacing="2" cellpadding="0" border="0" width="100%">
+  <tr class="columnHeaders">
+	   <td  class="ShadedWithNoBorder2" style= "padding: 10px"><span>Account</span></td>
+	   <td  class="ShadedWithNoBorder2" style= "padding: 10px"><span>Account Name</span></a></td>
+	   <td  class="ShadedWithNoBorder2" style= "padding: 10px"><span>Policy</span></a></td>
+  	   <td  class="ShadedWithNoBorder2" style= "padding: 10px"><span>Eff Date</span></td>
+ 	   <td  class="ShadedWithNoBorder2" style= "padding: 10px"><span>Prem Due</span></td>
+  	   <td  class="ShadedWithNoBorder2" style= "padding: 10px"><span>Paid Date</span></td>
+   	    <td align="left" class="ShadedWithNoBorder2" style= "padding: 10px"><span>Cvg</span></td>
+ 	   <td  class="ShadedWithNoBorder2" style= "padding: 10px"><span>Prem Amt</span></td>
+  	   <td  class="ShadedWithNoBorder2" style= "padding: 10px"><span>Comm Amt</span></td>
+   	   <td  class="ShadedWithNoBorder2" style= "padding: 10px"><span>C</span></td>
+ </tr>
+
+          
+  <tr  class="NormalYellow">
+   <td align="left">1185928-BL-1791659</td>
+   <td align="left">Hardenbergh Staffing Group LLC</td>
+   <td align="left">000010282138 00000</td>
+   <td align="left">&nbsp;05/01/2024</td>
+   <td align="left">&nbsp;03/01/2025</td>
+   <td align="left">&nbsp;03/17/2025</td>
+   <td align="left">&nbsp;LI</td> 
+   <td align="right">&nbsp;         504.00</td>
+   <td align="right">&nbsp;          75.60</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;AD</td> 
+   <td align="right">&nbsp;          42.00</td>
+   <td align="right">&nbsp;           6.30</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">000010282139 00000</td>
+         <td align="left">&nbsp;05/01/2024</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/17/2025</td>
+     <td align="left">&nbsp;LTD</td> 
+   <td align="right">&nbsp;         788.54</td>
+   <td align="right">&nbsp;         118.28</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">000010282140 00000</td>
+         <td align="left">&nbsp;05/01/2024</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/17/2025</td>
+     <td align="left">&nbsp;WI</td> 
+   <td align="right">&nbsp;         530.48</td>
+   <td align="right">&nbsp;          79.57</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">000010282219 00000</td>
+         <td align="left">&nbsp;05/01/2024</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/17/2025</td>
+     <td align="left">&nbsp;LVC</td> 
+   <td align="right">&nbsp;         263.71</td>
+   <td align="right">&nbsp;          26.37</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">00001D043402 00000</td>
+         <td align="left">&nbsp;05/01/2024</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/17/2025</td>
+     <td align="left">&nbsp;DN</td> 
+   <td align="right">&nbsp;       2,824.28</td>
+   <td align="right">&nbsp;         282.43</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">000400001000 28796</td>
+         <td align="left">&nbsp;05/01/2024</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/17/2025</td>
+     <td align="left">&nbsp;VSLI</td> 
+   <td align="right">&nbsp;           3.24</td>
+   <td align="right">&nbsp;           0.49</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;VAD</td> 
+   <td align="right">&nbsp;          14.80</td>
+   <td align="right">&nbsp;           2.22</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;VLI</td> 
+   <td align="right">&nbsp;         140.21</td>
+   <td align="right">&nbsp;          21.03</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;VSAD</td> 
+   <td align="right">&nbsp;           0.70</td>
+   <td align="right">&nbsp;           0.11</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;VCLI</td> 
+   <td align="right">&nbsp;          10.00</td>
+   <td align="right">&nbsp;           1.50</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">000400282180 00000</td>
+         <td align="left">&nbsp;05/01/2024</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/17/2025</td>
+     <td align="left">&nbsp;VLVC</td> 
+   <td align="right">&nbsp;         207.81</td>
+   <td align="right">&nbsp;          20.78</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+          
+  <tr  class="NormalYellow">
+   <td align="left">BAPISTRETI-BL-1517083</td>
+   <td align="left">Baptist Retirement Communities of</td>
+   <td align="left">000010185587 00000</td>
+   <td align="left">&nbsp;01/01/2014</td>
+   <td align="left">&nbsp;04/01/2025</td>
+   <td align="left">&nbsp;03/13/2025</td>
+   <td align="left">&nbsp;AD</td> 
+   <td align="right">&nbsp;          46.10</td>
+   <td align="right">&nbsp;           4.61</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;LI</td> 
+   <td align="right">&nbsp;       1,469.04</td>
+   <td align="right">&nbsp;         146.90</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+          
+  <tr  class="NormalYellow">
+   <td align="left">CONCSUPPLY-BL-1604064</td>
+   <td align="left">Concrete Supply Co., Inc.</td>
+   <td align="left">000010249122 00000</td>
+   <td align="left">&nbsp;01/01/2019</td>
+   <td align="left">&nbsp;03/01/2025</td>
+   <td align="left">&nbsp;03/03/2025</td>
+   <td align="left">&nbsp;LTD</td> 
+   <td align="right">&nbsp;        -300.00</td>
+   <td align="right">&nbsp;         -45.00</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">000010249287 00000</td>
+         <td align="left">&nbsp;01/01/2019</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/03/2025</td>
+     <td align="left">&nbsp;LTD</td> 
+   <td align="right">&nbsp;       4,239.93</td>
+   <td align="right">&nbsp;         635.99</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">000010258963 00000</td>
+         <td align="left">&nbsp;01/01/2020</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/03/2025</td>
+     <td align="left">&nbsp;LI</td> 
+   <td align="right">&nbsp;       1,097.03</td>
+   <td align="right">&nbsp;         164.55</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;AD</td> 
+   <td align="right">&nbsp;         116.75</td>
+   <td align="right">&nbsp;          17.51</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">000010263530 00000</td>
+         <td align="left">&nbsp;11/01/2020</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/03/2025</td>
+     <td align="left">&nbsp;WI</td> 
+   <td align="right">&nbsp;       5,139.63</td>
+   <td align="right">&nbsp;         770.94</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">00001D043069 00000</td>
+         <td align="left">&nbsp;01/01/2024</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/03/2025</td>
+     <td align="left">&nbsp;DN</td> 
+   <td align="right">&nbsp;       8,136.37</td>
+   <td align="right">&nbsp;         813.64</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">000400001000 28416</td>
+         <td align="left">&nbsp;01/01/2024</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/03/2025</td>
+     <td align="left">&nbsp;VSLI</td> 
+   <td align="right">&nbsp;         265.00</td>
+   <td align="right">&nbsp;          39.75</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;VCLI</td> 
+   <td align="right">&nbsp;          83.16</td>
+   <td align="right">&nbsp;          12.47</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;VSAD</td> 
+   <td align="right">&nbsp;          19.49</td>
+   <td align="right">&nbsp;           2.92</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;VAD</td> 
+   <td align="right">&nbsp;         227.35</td>
+   <td align="right">&nbsp;          34.10</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;VLI</td> 
+   <td align="right">&nbsp;       2,813.67</td>
+   <td align="right">&nbsp;         422.05</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">000400279613 00000</td>
+         <td align="left">&nbsp;01/01/2024</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/03/2025</td>
+     <td align="left">&nbsp;VLVC</td> 
+   <td align="right">&nbsp;       1,301.25</td>
+   <td align="right">&nbsp;         130.13</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+          
+  <tr  class="NormalYellow">
+   <td align="left">CONCSUPPLY-BL-1681265</td>
+   <td align="left">Concrete Supply Co., Inc.</td>
+   <td align="left">000010249287 00000</td>
+   <td align="left">&nbsp;01/01/2019</td>
+   <td align="left">&nbsp;03/01/2025</td>
+   <td align="left">&nbsp;03/03/2025</td>
+   <td align="left">&nbsp;LTD</td> 
+   <td align="right">&nbsp;          97.31</td>
+   <td align="right">&nbsp;          14.60</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">000010258963 00000</td>
+         <td align="left">&nbsp;01/01/2020</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/03/2025</td>
+     <td align="left">&nbsp;AD</td> 
+   <td align="right">&nbsp;           3.15</td>
+   <td align="right">&nbsp;           0.47</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;LI</td> 
+   <td align="right">&nbsp;          29.61</td>
+   <td align="right">&nbsp;           4.44</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">000010263530 00000</td>
+         <td align="left">&nbsp;11/01/2020</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/03/2025</td>
+     <td align="left">&nbsp;WI</td> 
+   <td align="right">&nbsp;         187.19</td>
+   <td align="right">&nbsp;          28.08</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">00001D043069 00000</td>
+         <td align="left">&nbsp;01/01/2024</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/03/2025</td>
+     <td align="left">&nbsp;DN</td> 
+   <td align="right">&nbsp;         271.32</td>
+   <td align="right">&nbsp;          27.13</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">000400001000 28416</td>
+         <td align="left">&nbsp;01/01/2024</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/03/2025</td>
+     <td align="left">&nbsp;VCLI</td> 
+   <td align="right">&nbsp;           6.16</td>
+   <td align="right">&nbsp;           0.92</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;VSLI</td> 
+   <td align="right">&nbsp;           5.08</td>
+   <td align="right">&nbsp;           0.76</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;VSAD</td> 
+   <td align="right">&nbsp;           1.33</td>
+   <td align="right">&nbsp;           0.20</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;VAD</td> 
+   <td align="right">&nbsp;           9.12</td>
+   <td align="right">&nbsp;           1.37</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;VLI</td> 
+   <td align="right">&nbsp;          56.10</td>
+   <td align="right">&nbsp;           8.42</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">000400279613 00000</td>
+         <td align="left">&nbsp;01/01/2024</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/03/2025</td>
+     <td align="left">&nbsp;VLVC</td> 
+   <td align="right">&nbsp;          50.18</td>
+   <td align="right">&nbsp;           5.02</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+          
+  <tr  class=  "Normal">
+   <td align="left">CONCSUPPLY-BL-1788043</td>
+   <td align="left">Concrete Supply Co., Inc.</td>
+   <td align="left">000010249287 00000</td>
+   <td align="left">&nbsp;01/01/2019</td>
+   <td align="left">&nbsp;03/01/2025</td>
+   <td align="left">&nbsp;03/03/2025</td>
+   <td align="left">&nbsp;LTD</td> 
+   <td align="right">&nbsp;         560.75</td>
+   <td align="right">&nbsp;          84.11</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">000010258963 00000</td>
+         <td align="left">&nbsp;01/01/2020</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/03/2025</td>
+     <td align="left">&nbsp;AD</td> 
+   <td align="right">&nbsp;          20.25</td>
+   <td align="right">&nbsp;           3.04</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;LI</td> 
+   <td align="right">&nbsp;         190.35</td>
+   <td align="right">&nbsp;          28.55</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">000010263530 00000</td>
+         <td align="left">&nbsp;11/01/2020</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/03/2025</td>
+     <td align="left">&nbsp;WI</td> 
+   <td align="right">&nbsp;         976.09</td>
+   <td align="right">&nbsp;         146.41</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">00001D043069 00000</td>
+         <td align="left">&nbsp;01/01/2024</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/03/2025</td>
+     <td align="left">&nbsp;DN</td> 
+   <td align="right">&nbsp;       1,059.08</td>
+   <td align="right">&nbsp;         105.91</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">000400001000 28416</td>
+         <td align="left">&nbsp;01/01/2024</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/03/2025</td>
+     <td align="left">&nbsp;VCLI</td> 
+   <td align="right">&nbsp;           3.08</td>
+   <td align="right">&nbsp;           0.46</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;VSAD</td> 
+   <td align="right">&nbsp;           0.76</td>
+   <td align="right">&nbsp;           0.11</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;VAD</td> 
+   <td align="right">&nbsp;          25.71</td>
+   <td align="right">&nbsp;           3.86</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;VSLI</td> 
+   <td align="right">&nbsp;           7.70</td>
+   <td align="right">&nbsp;           1.16</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;VLI</td> 
+   <td align="right">&nbsp;         435.17</td>
+   <td align="right">&nbsp;          65.28</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">000400279613 00000</td>
+         <td align="left">&nbsp;01/01/2024</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/03/2025</td>
+     <td align="left">&nbsp;VLVC</td> 
+   <td align="right">&nbsp;         230.84</td>
+   <td align="right">&nbsp;          23.08</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+          
+  <tr  class="NormalYellow">
+   <td align="left">DEVDISGA-BL-1665204</td>
+   <td align="left">Developmental Disabilities Ministries, I</td>
+   <td align="left">000010261949 00000</td>
+   <td align="left">&nbsp;06/01/2020</td>
+   <td align="left">&nbsp;03/01/2025</td>
+   <td align="left">&nbsp;02/28/2025</td>
+   <td align="left">&nbsp;LTD</td> 
+   <td align="right">&nbsp;       1,592.05</td>
+   <td align="right">&nbsp;         238.81</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">&nbsp;</td>
+         <td align="left">&nbsp;</td>
+         <td align="left">&nbsp;04/01/2025</td>
+         <td align="left">&nbsp;03/26/2025</td>
+    <td align="left">&nbsp;LTD</td> 
+   <td align="right">&nbsp;       1,067.38</td>
+   <td align="right">&nbsp;         160.11</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">000010261950 00000</td>
+         <td align="left">&nbsp;06/01/2020</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;02/28/2025</td>
+     <td align="left">&nbsp;DLI</td> 
+   <td align="right">&nbsp;          33.66</td>
+   <td align="right">&nbsp;           5.05</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;LI</td> 
+   <td align="right">&nbsp;       2,058.90</td>
+   <td align="right">&nbsp;         308.84</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;AD</td> 
+   <td align="right">&nbsp;         215.48</td>
+   <td align="right">&nbsp;          32.32</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">&nbsp;</td>
+         <td align="left">&nbsp;</td>
+         <td align="left">&nbsp;04/01/2025</td>
+         <td align="left">&nbsp;03/26/2025</td>
+    <td align="left">&nbsp;LI</td> 
+   <td align="right">&nbsp;       1,586.02</td>
+   <td align="right">&nbsp;         237.90</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;AD</td> 
+   <td align="right">&nbsp;         160.20</td>
+   <td align="right">&nbsp;          24.03</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;DLI</td> 
+   <td align="right">&nbsp;          33.66</td>
+   <td align="right">&nbsp;           5.05</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+          
+  <tr  class="NormalYellow">
+   <td align="left">TEKRAIL-BL-1589924</td>
+   <td align="left">Tek-Rail, Inc.</td>
+   <td align="left">000940240300 00000</td>
+   <td align="left">&nbsp;02/01/2018</td>
+   <td align="left">&nbsp;03/01/2025</td>
+   <td align="left">&nbsp;03/17/2025</td>
+   <td align="left">&nbsp;LI</td> 
+   <td align="right">&nbsp;         111.01</td>
+   <td align="right">&nbsp;          16.65</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;AD</td> 
+   <td align="right">&nbsp;          10.59</td>
+   <td align="right">&nbsp;           1.59</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">000940240301 00000</td>
+         <td align="left">&nbsp;02/01/2018</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/17/2025</td>
+     <td align="left">&nbsp;VLVC</td> 
+   <td align="right">&nbsp;         171.31</td>
+   <td align="right">&nbsp;          17.13</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">000940240302 00000</td>
+         <td align="left">&nbsp;02/01/2018</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/17/2025</td>
+     <td align="left">&nbsp;WI</td> 
+   <td align="right">&nbsp;         316.21</td>
+   <td align="right">&nbsp;          47.43</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">00094D036902 00000</td>
+         <td align="left">&nbsp;02/01/2018</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/17/2025</td>
+     <td align="left">&nbsp;DN</td> 
+   <td align="right">&nbsp;       1,088.53</td>
+   <td align="right">&nbsp;         108.85</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+          
+  <tr  class=  "Normal">
+   <td align="left">TPBCR-BL-1572091</td>
+   <td align="left">TurningPoint Breast Cancer Rehabilitatio</td>
+   <td align="left">000940225575 00000</td>
+   <td align="left">&nbsp;01/01/2017</td>
+   <td align="left">&nbsp;03/01/2025</td>
+   <td align="left">&nbsp;03/05/2025</td>
+   <td align="left">&nbsp;AD</td> 
+   <td align="right">&nbsp;          -3.50</td>
+   <td align="right">&nbsp;          -0.53</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+      <td align="left">&nbsp;</td>
+    <td align="left">&nbsp;LI</td> 
+   <td align="right">&nbsp;         -50.75</td>
+   <td align="right">&nbsp;          -7.61</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class= "Normal">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">000940225576 00000</td>
+         <td align="left">&nbsp;01/01/2017</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/05/2025</td>
+     <td align="left">&nbsp;LTD</td> 
+   <td align="right">&nbsp;        -177.52</td>
+   <td align="right">&nbsp;         -26.63</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+
+  <tr class="NormalYellow">
+   <td align="left">&nbsp;</td>   
+   
+         <td align="left">&nbsp;</td>
+         <td align="left">000940225577 00000</td>
+         <td align="left">&nbsp;01/01/2017</td>
+         <td align="left">&nbsp;03/01/2025</td>
+         <td align="left">&nbsp;03/05/2025</td>
+     <td align="left">&nbsp;WI</td> 
+   <td align="right">&nbsp;        -225.47</td>
+   <td align="right">&nbsp;         -33.82</td>
+   <td align="left">&nbsp;</td>
+  </tr>
+
+
+  <tr class="recordnormal">
+  
+	   <td align="left" colspan="5">  </td>
+	   
+	   <td style= "padding: 10px" class= "ShadedWithNoBorder2" align="left" colspan="2"> Totals:&nbsp</td>
+	   <td class=ShadedWithNoBorder1>  42,198.63 </td>
+	   <td class=ShadedWithNoBorder1>  5,473.79 </td>
+	   <td>&nbsp</td>
+  </tr>
+
+ </table><!-- The table tag I added -->
+</table>
+
+</td></tr>
+</table>
+
+</body>
+</html>

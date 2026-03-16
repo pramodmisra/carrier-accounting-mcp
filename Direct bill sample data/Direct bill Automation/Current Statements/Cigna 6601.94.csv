@@ -1,0 +1,14 @@
+Line Item,Producer Code,Statement Date,Account Number,Policy Number,Account Name,Product,Month/Year,Comp Rate Type,Payment Type,Check Number,Employees Count/Number,Premium Amount,Comp Rate,Payment Amount
+Opening/Previous Balance,'305940,4/22/2025,,,,,,,,,,,,-1826.88
+Closing Balance,'305940,4/22/2025,,,,,,,,,,,,0
+Client Detail,'305940,4/22/2025,'0616305,,Cataract Steel Industries,MEDICAL,Apr-25,Per Employee,,,5,,60,300
+Client Detail,'305940,4/22/2025,'0655470,,"CourierNet, Inc.",MEDICAL,Mar-25,Per Employee,,,-1,,50,-50
+Client Detail,'305940,4/22/2025,'0655470,,"CourierNet, Inc.",MEDICAL,Apr-25,Per Employee,,,44,,50,2200
+Client Detail,'305940,4/22/2025,'0658368,,"CyCan Industries, Inc.",MEDICAL,Apr-25,Per Employee,,,20,,50,1000
+Client Detail,'305940,4/22/2025,'0920010,,COMMERCIAL STAINLESS FAB,MEDICAL,Mar-25,Per Employee,,,14,,25,350
+Client Detail,'305940,4/22/2025,'0607049,,"Osborne Wood Products, In",MEDICAL,Apr-25,Per Employee,,,25,,32,800
+Client Detail,'305940,4/22/2025,'0653223,,Pattillo Construction Cor,MEDICAL,Jan-25,Percent,,,,-3165.89,0.05,-158.29
+Client Detail,'305940,4/22/2025,'0653223,,Pattillo Construction Cor,MEDICAL,Feb-25,Percent,,,,-3165.89,0.05,-158.29
+Client Detail,'305940,4/22/2025,'0653223,,Pattillo Construction Cor,MEDICAL,Mar-25,Percent,,,,56908.43,0.05,2845.4
+Client Detail,'305940,4/22/2025,'0653929,,"Rossee Oil Co., Inc.",MEDICAL,Apr-25,Per Employee,,,26,,50,1300
+Total Comp Payment,'305940,4/22/2025,,,,,,,EFT,,,,,6601.94

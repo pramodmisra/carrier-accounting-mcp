@@ -1,0 +1,54 @@
+version: "3.8"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "8001:8001"
+    env_file: .env
+    environment:
+      - DEV_API_KEY=dev-key-12345
+      - DEV_TENANT_ID=default
+      - DATABASE_URL=postgresql://carrier:carrier@postgres:5432/carrier_platform
+    depends_on:
+      - postgres
+    volumes:
+      - ./uploads:/app/uploads
+      - ./exports:/app/exports
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8001
+    depends_on:
+      - api
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: carrier_platform
+      POSTGRES_USER: carrier
+      POSTGRES_PASSWORD: carrier
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  # Optional: MCP server for Claude/AI integrations
+  mcp:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "8000:8000"
+    env_file: .env
+    command: ["python", "mcp_server/server.py", "--port", "8000"]
+
+volumes:
+  pgdata:

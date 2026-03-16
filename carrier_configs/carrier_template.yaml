@@ -1,0 +1,68 @@
+# ============================================================
+# Carrier Configuration Template
+# Copy this file to: carrier_configs/{carrier_slug}.yaml
+# Then register the schema in mcp_server/schemas/carrier_schemas/__init__.py
+# See docs/adding_carriers.md for full walkthrough
+# ============================================================
+
+carrier_slug: carrier_name                   # e.g. nationwide, travelers, erie
+carrier_display_name: "Full Carrier Name"    # e.g. "Nationwide Insurance"
+statement_format: excel                      # excel | pdf | both
+
+# ---- Field Mappings ----
+# Set to null if the field doesn't exist in this carrier's format
+field_mappings:
+  policy_number:      "Policy Number"        # Column/field name in the statement
+  client_name:        "Insured Name"
+  effective_date:     "Effective Date"
+  expiration_date:    "Expiration Date"
+  statement_date:     "Statement Date"
+  premium:            "Written Premium"
+  commission:         "Commission Amount"
+  commission_rate:    "Commission Rate"
+  transaction_type:   "Transaction Type"
+  line_of_business:   "Line of Business"
+  producer_code:      "Producer Code"
+
+# ---- Date Format ----
+date_format: "%m/%d/%Y"    # Python strptime format
+# Common formats:
+#   "%m/%d/%Y"   →  03/15/2024
+#   "%Y-%m-%d"   →  2024-03-15
+#   "%m/%d/%y"   →  03/15/24
+#   "%B %d, %Y"  →  March 15, 2024
+
+# ---- Transaction Type Mapping ----
+# Maps carrier's raw transaction type values → canonical types
+# Canonical types: premium, commission, return_premium, endorsement,
+#                  cancellation, reinstatement, fee, adjustment
+transaction_type_map:
+  "NB":   premium
+  "RN":   premium
+  "END":  endorsement
+  "CAN":  cancellation
+  "RP":   return_premium
+  "REIN": reinstatement
+
+# ---- Portal (for automated statement download) ----
+portal:
+  enabled: false
+  url: "https://agentportal.carrier.com"
+  username_field: "username"      # HTML input name/id
+  password_field: "password"
+  login_button:   "btnLogin"
+  statements_url: "/statements"  # Path after login
+  download_selector: ".statement-link"  # CSS selector for download links
+
+# ---- Trial Run Settings ----
+trial:
+  weeks_required: 2               # Min weeks of trial before enabling live mode
+  min_auto_rate: 0.90             # Minimum auto-approval rate to promote to live
+  min_accuracy_rate: 0.95         # Minimum match accuracy to promote to live
+
+# ---- Notes ----
+notes: |
+  Add any carrier-specific notes here:
+  - Known data quality issues
+  - Special handling required
+  - Contact at carrier for statement format questions

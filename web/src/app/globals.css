@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .metric-card {
+    @apply bg-white rounded-xl border border-gray-200 p-6 shadow-sm;
+  }
+  .badge-success {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-success-50 text-success-600;
+  }
+  .badge-warning {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-warning-50 text-warning-600;
+  }
+  .badge-danger {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-danger-50 text-danger-600;
+  }
+  .btn-primary {
+    @apply px-4 py-2 bg-primary-600 text-white rounded-lg text-sm font-medium
+           hover:bg-primary-700 transition-colors disabled:opacity-50;
+  }
+  .btn-outline {
+    @apply px-4 py-2 border border-gray-300 text-gray-700 rounded-lg text-sm font-medium
+           hover:bg-gray-50 transition-colors;
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://registry.modelcontextprotocol.io/schema/server.json",
+  "name": "io.github.pramodmisra/carrier-accounting-mcp",
+  "description": "Insurance carrier accounting automation for Applied Epic agencies. Ingest PDFs/Excel, AI-normalize with Claude, 5-layer reconciliation (99.5% accuracy), post to Epic. 48+ carriers supported.",
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registry_type": "pypi",
+      "name": "carrier-accounting-mcp",
+      "version": "0.1.0",
+      "environment_variables": [
+        {
+          "name": "ANTHROPIC_API_KEY",
+          "description": "Anthropic API key for LLM normalization of carrier statements",
+          "required": false
+        }
+      ],
+      "transport": [
+        {
+          "type": "stdio",
+          "command": "carrier-accounting-mcp"
+        }
+      ]
+    }
+  ]
+}

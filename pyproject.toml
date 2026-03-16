@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "carrier-accounting-mcp"
+version = "0.1.0"
+description = "MCP Server for insurance carrier accounting — ingest carrier PDFs/Excel, reconcile against Applied Epic, post entries. Built for US insurance agencies."
+requires-python = ">=3.11"
+readme = "README_PYPI.md"
+license = {text = "MIT"}
+authors = [
+    {name = "5G Vector", email = "hello@5gvector.com"},
+]
+keywords = ["mcp", "insurance", "carrier-accounting", "applied-epic", "reconciliation", "direct-bill"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Topic :: Office/Business :: Financial :: Accounting",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "fastmcp>=0.4.0",
+    "pdfplumber>=0.10.0",
+    "openpyxl>=3.1.0",
+    "pandas>=2.1.0",
+    "anthropic>=0.23.0",
+    "pydantic>=2.5.0",
+    "python-dateutil>=2.8.0",
+    "python-dotenv>=1.0.0",
+    "structlog>=23.2.0",
+    "httpx>=0.25.0",
+    "tenacity>=8.2.3",
+    "xlrd>=2.0.0",
+    "lxml>=5.0.0",
+    "html5lib>=1.1",
+]
+
+[project.urls]
+Homepage = "https://5gvector.com/carrier-accounting"
+Repository = "https://github.com/pramodmisra/carrier-accounting-mcp"
+
+[project.scripts]
+carrier-accounting-mcp = "mcp_server.server:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-mock>=3.12.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["mcp_server*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
