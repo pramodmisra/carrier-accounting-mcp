@@ -1,32 +1,36 @@
 """
-Production MCP Server with Streamable HTTP transport.
+Production MCP Server with Streamable HTTP transport + OAuth 2.0.
 This is the deployment entrypoint for Railway / cloud hosting.
 
-Adds to the base server.py:
+Features:
 - Streamable HTTP transport (required for Anthropic MCP Directory)
+- OAuth 2.0 authorization code flow via Auth0
 - /health endpoint
+- /.well-known/oauth-authorization-server metadata
 - CORS for claude.ai, claude.com
 - Stateless mode for horizontal scaling
 
 Usage:
-  # HTTP mode (production / directory submission)
   uvicorn mcp_server.server_http:app --host 0.0.0.0 --port ${PORT:-8000}
-
-  # stdio mode (local Claude Desktop / Claude Code)
-  carrier-accounting-mcp
 """
 
 import os
+from starlette.applications import Starlette
 from starlette.middleware import Middleware
 from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import JSONResponse
+from starlette.routing import Mount, Route
 
-# Import the MCP server instance with all tools already registered
+# Import the MCP server instance with all tools registered
 from mcp_server.server import mcp
+from mcp_server.auth.oauth import oauth_routes
 
 
-# ── CORS middleware for Claude platforms ──
-ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "https://claude.ai,https://claude.com,http://localhost:6274").split(",")
+# ── CORS ──
+ALLOWED_ORIGINS = os.getenv(
+    "ALLOWED_ORIGINS",
+    "https://claude.ai,https://claude.com,http://localhost:6274"
+).split(",")
 
 middleware = [
     Middleware(
@@ -39,8 +43,8 @@ middleware = [
     )
 ]
 
-# ── Health check endpoint ──
-@mcp.custom_route("/health", methods=["GET"])
+
+# ── Health check ──
 async def health_check(request):
     return JSONResponse({
         "status": "healthy",
@@ -49,14 +53,23 @@ async def health_check(request):
         "tools": 21,
         "carriers": 48,
         "transport": "streamable-http",
+        "auth": "oauth2",
     })
 
 
-# ── ASGI app for uvicorn / Railway ──
-app = mcp.http_app(
-    path="/mcp",
+# ── Build the ASGI app ──
+# MCP app handles /mcp endpoint
+mcp_app = mcp.http_app(path="/mcp", stateless_http=True)
+
+# Combine: OAuth routes at root + MCP at /mcp + health
+app = Starlette(
+    routes=[
+        Route("/health", health_check, methods=["GET"]),
+        *oauth_routes,  # /authorize, /oauth/callback, /oauth/token, /.well-known/...
+        Mount("/", app=mcp_app),  # MCP protocol at /mcp
+    ],
     middleware=middleware,
-    stateless_http=True,
+    lifespan=mcp_app.lifespan,
 )
 
 
@@ -64,11 +77,11 @@ app = mcp.http_app(
 if __name__ == "__main__":
     import uvicorn
     port = int(os.getenv("PORT", "8000"))
-    print(f"Starting Carrier Accounting MCP Server (HTTP)")
+    print(f"Starting Carrier Accounting MCP Server (HTTP + OAuth)")
     print(f"  URL: http://0.0.0.0:{port}")
-    print(f"  MCP endpoint: http://0.0.0.0:{port}/mcp")
+    print(f"  MCP: http://0.0.0.0:{port}/mcp")
     print(f"  Health: http://0.0.0.0:{port}/health")
-    print(f"  CORS origins: {ALLOWED_ORIGINS}")
-    print(f"  Mode: stateless HTTP")
+    print(f"  OAuth metadata: http://0.0.0.0:{port}/.well-known/oauth-authorization-server")
+    print(f"  Auth0 domain: {os.getenv('AUTH0_DOMAIN', 'dev-84h8qxuqxtxik8x7.us.auth0.com')}")
     print()
     uvicorn.run(app, host="0.0.0.0", port=port)
