@@ -1,0 +1,4 @@
+Assistant ID: asst_KLrv9ztTaT22IQtpqhz3d2PZ
+Name: Carrier Accounting Assistant by 5G Vector
+Model: gpt-4o
+Dashboard: https://platform.openai.com/assistants/asst_KLrv9ztTaT22IQtpqhz3d2PZ
