@@ -65,6 +65,7 @@ async def landing_page(request):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='96' fill='%232563eb'/%3E%3Cpath d='M256 120L160 280h72l-16 112 112-176h-72l16-96z' fill='none' stroke='white' stroke-width='28' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <title>5G Vector — Carrier Accounting MCP Server</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -154,10 +155,18 @@ async def landing_page(request):
 # MCP app handles /mcp endpoint
 mcp_app = mcp.http_app(path="/mcp", stateless_http=True)
 
-# Combine: landing + OAuth + health + MCP
+async def favicon(request):
+    from starlette.responses import Response
+    svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" rx="96" fill="#2563eb"/><path d="M256 120L160 280h72l-16 112 112-176h-72l16-96z" fill="none" stroke="white" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+    return Response(content=svg, media_type="image/svg+xml")
+
+
+# Combine: landing + favicon + OAuth + health + MCP
 app = Starlette(
     routes=[
         Route("/", landing_page, methods=["GET"]),
+        Route("/favicon.ico", favicon, methods=["GET"]),
+        Route("/favicon.svg", favicon, methods=["GET"]),
         Route("/health", health_check, methods=["GET"]),
         *oauth_routes,
         Mount("/", app=mcp_app),
