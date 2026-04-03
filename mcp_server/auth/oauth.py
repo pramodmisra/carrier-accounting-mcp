@@ -20,7 +20,7 @@ from starlette.routing import Route
 
 # Auth0 config
 AUTH0_DOMAIN = os.getenv("AUTH0_DOMAIN", "dev-84h8qxuqxtxik8x7.us.auth0.com")
-AUTH0_CLIENT_ID = os.getenv("AUTH0_CLIENT_ID", "jCROt4KKVPS2s06c8HmVGACMqPyd2Bsc")
+AUTH0_CLIENT_ID = os.getenv("AUTH0_CLIENT_ID", "")
 AUTH0_CLIENT_SECRET = os.getenv("AUTH0_CLIENT_SECRET", "")
 AUTH0_AUDIENCE = os.getenv("AUTH0_AUDIENCE", "https://mcp.5gvector.com/carrier-accounting")
 
