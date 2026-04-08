@@ -17,8 +17,15 @@ COPY platform_db/ platform_db/
 COPY data_lake/ data_lake/
 COPY carrier_configs/ carrier_configs/
 
-# Create directories for uploads and exports
-RUN mkdir -p uploads exports reports screenshots downloads
+# Create non-root user and directories
+RUN useradd -m -u 1000 appuser && \
+    mkdir -p uploads exports reports screenshots downloads && \
+    chown -R appuser:appuser /app uploads exports reports screenshots downloads
+
+USER appuser
+
+HEALTHCHECK --interval=30s --timeout=5s --start-period=10s \
+  CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8001/health')" || exit 1
 
 EXPOSE 8001
 

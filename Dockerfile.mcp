@@ -12,7 +12,14 @@ COPY mcp_server/ mcp_server/
 COPY data_lake/ data_lake/
 COPY carrier_configs/ carrier_configs/
 
-RUN mkdir -p uploads exports
+RUN useradd -m -u 1000 appuser && \
+    mkdir -p uploads exports && \
+    chown -R appuser:appuser /app uploads exports
+
+USER appuser
+
+HEALTHCHECK --interval=30s --timeout=5s --start-period=10s \
+  CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')" || exit 1
 
 EXPOSE 8000
 
