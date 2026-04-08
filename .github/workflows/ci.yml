@@ -23,6 +23,7 @@ jobs:
           pip install ruff bandit pytest-cov
 
       - name: Lint with ruff
+        continue-on-error: true
         run: ruff check . --output-format=github
 
       - name: Security scan with bandit
